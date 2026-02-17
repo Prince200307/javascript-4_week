@@ -11,7 +11,7 @@ console.log(add);
 */
 
 //For variables, we have three keywords: var(outdated and not block scoped), let and const.
-/*
+
 const age= 30;
 //age= 31;
 
@@ -33,7 +33,7 @@ console.log(user.age);
 const number= [1,2,3];
 //number= [4,5,6];
 number.push(4);
-*/
+
 
 // if (true) {
 //         const blockScopedVariable= "I am block scoped";
