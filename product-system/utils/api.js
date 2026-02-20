@@ -1,4 +1,4 @@
-// Day 4: Async/await, Promises, closures in retry logic
+// Day 4: Async/await, Promises
 // Day 5: Error handling
 
 // Simulates a network delay using a Promise
@@ -6,29 +6,6 @@ const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
 // In-memory data store (simulates a database)
 let store = []
-
-// Closure-based retry wrapper — returns a new function that retries on failure
-const createRetry = (fn, maxRetries = 3) => {
-    return async (...args) => {
-        let lastError
-
-        for (let attempt = 1; attempt <= maxRetries; attempt++) {
-            try {
-                const result = await fn(...args)
-                return result
-            } catch (error) {
-                lastError = error
-                console.log(`  Attempt ${attempt} failed: ${error.message}`)
-
-                if (attempt < maxRetries) {
-                    await delay(500)
-                }
-            }
-        }
-
-        throw new Error(`Failed after ${maxRetries} retries: ${lastError.message}`)
-    }
-}
 
 // Generic API client — simulates async CRUD operations
 const apiClient = {
@@ -70,4 +47,4 @@ const apiClient = {
     }
 }
 
-export { apiClient, createRetry }
+export { apiClient }

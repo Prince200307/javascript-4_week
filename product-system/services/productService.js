@@ -2,7 +2,7 @@
 // Day 3: map, filter, reduce for statistics and search
 // Day 5: ES6 modules, error handling
 
-import { apiClient, createRetry } from '../utils/api.js'
+import { apiClient } from '../utils/api.js'
 import { validateProduct } from '../utils/validators.js'
 import { ERROR_MESSAGES } from '../config/constants.js'
 
@@ -89,15 +89,11 @@ const getStatistics = async () => {
     }
 }
 
-// Wrap addProduct with retry logic (Day 4: closures)
-const addProductWithRetry = createRetry(addProduct, 3)
-
 export {
     addProduct,
     getAllProducts,
     updateProduct,
     deleteProduct,
     searchProducts,
-    getStatistics,
-    addProductWithRetry
+    getStatistics
 }
