@@ -1,6 +1,6 @@
 // Day 1: const/let, template literals
 
-export const API_URL = 'https://fakestoreapi.com'
+// export const API_URL = 'https://fakestoreapi.com'
 
 export const PRODUCT_CATEGORIES = [
     'Electronics',
