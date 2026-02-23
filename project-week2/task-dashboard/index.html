@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task management dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <div class="logo">Task Dashboard</div>
+            <div class="project-name">Frontend Development</div>
+        </div>
+        <div class="navbar-right">
+            <button class="btn-secondary">Add task</button>
+            <button class="btn-primary">Filters</button>
+        </div>
+    </nav>
+    <main class="main-container">
+        <header class="dashboard-header">
+            <div class="header-left">
+                <h1>My Tasks</h1>
+                <p>Manage your project tasks efficiently</p>
+            </div>
+            <div class="header-right">
+                <div class="stats-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Total Tasks</div>
+                </div>
+                <div class="stats-card">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Completed Tasks</div>
+                </div>
+                <div class="stats-card">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Pending Tasks</div>
+                </div>
+            </div>
+        </header>
+        <section class="task-list">
+            <div class="task-card">
+                <div class="task-header">
+                    <div class="task-id">1</div>
+                    <span class="status-badge status-closed">Closed</span>
+                </div>
+                <div class="task-body">
+                    <h3 class="task-title">Learn JS basics for React</h3>
+                    <p class="task-description">Overview of JS fundamentals and concepts to prepare for React.</p>
+                    <div class="task-meta">
+                        <span class="priority-badge priority-high">P1-High</span>
+                        <span class="task-type">Task</span>
+                        <span class="customer">VL</span>
+                    </div>
+                </div>
+                <div class="task-footer">
+                    <div class="task-dates">
+                        <span>Start: 16-Feb-2026</span>
+                        <span>End: 20-Feb-2026</span>
+                    </div>
+                    <div class="task-actions">
+                        <a href="https://github.com/Prince200307/javascript-4_week/tree/main/week1" class="btn-icon">🔗</a>
+                        <button class="btn-icon">✏️</button>
+                    </div>
+                </div>
+            </div>
+            <div class="task-card">
+                <div class="task-header">
+                    <div class="task-id">1.1</div>
+                    <span class="status-badge status-closed">Closed</span>
+                </div>
+                <div class="task-body">
+                    <h3 class="task-title">Learn js basics for React</h3>
+                    <p class="task-description">
+                        JS execution model, Variable declarations (const, let, var), Template literals
+                    </p>
+                    <div class="task-meta">
+                        <span class="priority-badge priority-high">P1-High</span>
+                        <span class="task-type">Task</span>
+                        <span class="customer">VL</span>
+                    </div>
+                </div>
+                <div class="task-footer">
+                    <div class="task-dates">
+                        <span>Start: 16-Feb-2026</span>
+                        <span>End: 16-Feb-2026</span>
+                    </div>
+                    <div class="task-actions">
+                    <div class="task-actions">
+                        <a href="https://github.com/Prince200307/javascript-4_week/blob/main/week1/Day_1.js" class="btn-icon">🔗</a>
+                        <button class="btn-icon">✏️</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-header">
+                    <div class="task-id">1.2</div>
+                    <span class="status-badge status-closed">Closed</span>
+                </div>
+                <div class="task-body">
+                    <h3 class="task-title">Learn JS basics for React</h3>
+                    <p class="task-description">Traditional functions vs arrow functions, this keyword, object & array destructuring, rest operator, spread syntax</p>
+                    <div class="task-meta">
+                        <span class="priority-badge priority-high">P1-High</span>
+                        <span class="task-type">Task</span>
+                        <span class="customer">VL</span>
+                    </div>
+                </div>
+                <div class="task-footer">
+                    <div class="task-dates">
+                        <span>Start: 17-Feb-2026</span>
+                        <span>End: 17-Feb-2026</span>
+                    </div>
+                    <div class="task-actions">
+                        <a href="https://github.com/Prince200307/javascript-4_week/blob/main/week1/Day_2.js" class="btn-icon">🔗</a>
+                        <button class="btn-icon">✏️</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-header">
+                    <div class="task-id">1.3</div>
+                    <span class="status-badge status-closed">Closed</span>
+                </div>
+                <div class="task-body">
+                    <h3 class="task-title">Learn JS basics for React</h3>
+                    <p class="task-description">Arrays and functional methods: map, filter, reduce, find, some/every and method chaining</p>
+                    <div class="task-meta">
+                        <span class="priority-badge priority-high">P1-High</span>
+                        <span class="task-type">Task</span>
+                        <span class="customer">VL</span>
+                    </div>
+                </div>
+                <div class="task-footer">
+                    <div class="task-dates">
+                        <span>Start: 18-Feb-2026</span>
+                        <span>End: 18-Feb-2026</span>
+                    </div>
+                    <div class="task-actions">
+                        <a href="https://github.com/Prince200307/javascript-4_week/blob/main/week1/Day_3.js" class="btn-icon">🔗</a>
+                        <button class="btn-icon">✏️</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-header">
+                    <div class="task-id">1.4</div>
+                    <span class="status-badge status-closed">Closed</span>
+                </div>
+                <div class="task-body">
+                    <h3 class="task-title">Learn JS basics for React</h3>
+                    <p class="task-description">Closures, Promises, async/await, then() vs async/await and promises for parallel requests</p>
+                    <div class="task-meta">
+                        <span class="priority-badge priority-high">P1-High</span>
+                        <span class="task-type">Task</span>
+                        <span class="customer">VL</span>
+                    </div>
+                </div>
+                <div class="task-footer">
+                    <div class="task-dates">
+                        <span>Start: 19-Feb-2026</span>
+                        <span>End: 19-Feb-2026</span>
+                    </div>
+                    <div class="task-actions">
+                        <a href="https://github.com/Prince200307/javascript-4_week/blob/main/week1/Day_4.js" class="btn-icon">🔗</a>
+                        <button class="btn-icon">✏️</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-header">
+                    <div class="task-id">1.5</div>
+                    <span class="status-badge status-closed">Closed</span>
+                </div>
+                <div class="task-body">
+                    <h3 class="task-title">Learn JS basics for React</h3>
+                    <p class="task-description">Modules: exports/imports; Error handling patterns; Mini project summarizing week 1 concepts</p>
+                    <div class="task-meta">
+                        <span class="priority-badge priority-high">P1-High</span>
+                        <span class="task-type">Task</span>
+                        <span class="customer">VL</span>
+                    </div>
+                </div>
+                <div class="task-footer">
+                    <div class="task-dates">
+                        <span>Start: 20-Feb-2026</span>
+                        <span>End: 20-Feb-2026</span>
+                    </div>
+                    <div class="task-actions">
+                        <a href="https://github.com/Prince200307/javascript-4_week/tree/main/week1/Day_5" class="btn-icon">🔗</a>
+                        <button class="btn-icon">✏️</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-header">
+                    <div class="task-id">2</div>
+                    <span class="status-badge status-open">Open</span>
+                </div>
+                <div class="task-body">
+                    <h3 class="task-title">Learn HTML + CSS - Tailwind</h3>
+                    <p class="task-description">Introduction to HTML & CSS with Tailwind utility-first approach.</p>
+                    <div class="task-meta">
+                        <span class="priority-badge priority-high">P1-High</span>
+                        <span class="task-type">Task</span>
+                        <span class="customer">VL</span>
+                    </div>
+                </div>
+                <div class="task-footer">
+                    <div class="task-dates">
+                        <span>Start: 23-Feb-2026</span>
+                        <span>End: 27-Feb-2026</span>
+                    </div>
+                    <div class="task-actions">
+                        <a href="https://github.com/Prince200307/javascript-4_week/tree/main/week2" class="btn-icon">🔗</a>
+                        <button class="btn-icon">✏️</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-header">
+                    <div class="task-id">2.1</div>
+                    <span class="status-badge status-open">Open</span>
+                </div>
+                <div class="task-body">
+                    <h3 class="task-title">Learn HTML + CSS - Tailwind</h3>
+                    <p class="task-description">Box model, box sizing, Flexbox properties and common layout patterns</p>
+                    <div class="task-meta">
+                        <span class="priority-badge priority-high">P1-High</span>
+                        <span class="task-type">Task</span>
+                        <span class="customer">VL</span>
+                    </div>
+                </div>
+                <div class="task-footer">
+                    <div class="task-dates">
+                        <span>Start: 23-Feb-2026</span>
+                        <span>End: 23-Feb-2026</span>
+                    </div>
+                    <div class="task-actions">
+                        <a href="https://github.com/Prince200307/javascript-4_week/blob/main/week2/day1.html" class="btn-icon">🔗</a>
+                        <button class="btn-icon">✏️</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-header">
+                    <div class="task-id">2.2</div>
+                    <span class="status-badge status-open">Open</span>
+                </div>
+                <div class="task-body">
+                    <h3 class="task-title">Learn HTML + CSS - Tailwind</h3>
+                    <p class="task-description">Grid properties, repeat notation, media queries and mobile-first approach</p>
+                    <div class="task-meta">
+                        <span class="priority-badge priority-high">P1-High</span>
+                        <span class="task-type">Task</span>
+                        <span class="customer">VL</span>
+                    </div>
+                </div>
+                <div class="task-footer">
+                    <div class="task-dates">
+                        <span>Start: 24-Feb-2026</span>
+                        <span>End: 24-Feb-2026</span>
+                    </div>
+                    <div class="task-actions">
+                        <button class="btn-icon">👁️</button>
+                        <button class="btn-icon">✏️</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-header">
+                    <div class="task-id">2.3</div>
+                    <span class="status-badge status-open">Open</span>
+                </div>
+                <div class="task-body">
+                    <h3 class="task-title">Learn HTML + CSS - Tailwind</h3>
+                    <p class="task-description">Tailwind: Spacing scale, colors, typography, flexbox, grid and responsive prefixes</p>
+                    <div class="task-meta">
+                        <span class="priority-badge priority-high">P1-High</span>
+                        <span class="task-type">Task</span>
+                        <span class="customer">VL</span>
+                    </div>
+                </div>
+                <div class="task-footer">
+                    <div class="task-dates">
+                        <span>Start: 25-Feb-2026</span>
+                        <span>End: 25-Feb-2026</span>
+                    </div>
+                    <div class="task-actions">
+                        <button class="btn-icon">👁️</button>
+                        <button class="btn-icon">✏️</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-header">
+                    <div class="task-id">2.4</div>
+                    <span class="status-badge status-open">Open</span>
+                </div>
+                <div class="task-body">
+                    <h3 class="task-title">Learn HTML + CSS - Tailwind</h3>
+                    <p class="task-description">Tailwind patterns and component thinking: cards, forms, navbar, buttons, dark mode</p>
+                    <div class="task-meta">
+                        <span class="priority-badge priority-high">P1-High</span>
+                        <span class="task-type">Task</span>
+                        <span class="customer">VL</span>
+                    </div>
+                </div>
+                <div class="task-footer">
+                    <div class="task-dates">
+                        <span>Start: 26-Feb-2026</span>
+                        <span>End: 26-Feb-2026</span>
+                    </div>
+                    <div class="task-actions">
+                        <button class="btn-icon">👁️</button>
+                        <button class="btn-icon">✏️</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-header">
+                    <div class="task-id">2.5</div>
+                    <span class="status-badge status-open">Open</span>
+                </div>
+                <div class="task-body">
+                    <h3 class="task-title">Learn HTML + CSS - Tailwind</h3>
+                    <p class="task-description">Accessibility and best practices: semantic HTML, ARIA, keyboard navigation, color contrast</p>
+                    <div class="task-meta">
+                        <span class="priority-badge priority-high">P1-High</span>
+                        <span class="task-type">Task</span>
+                        <span class="customer">VL</span>
+                    </div>
+                </div>
+                <div class="task-footer">
+                    <div class="task-dates">
+                        <span>Start: 27-Feb-2026</span>
+                        <span>End: 27-Feb-2026</span>
+                    </div>
+                    <div class="task-actions">
+                        <button class="btn-icon">👁️</button>
+                        <button class="btn-icon">✏️</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-header">
+                    <div class="task-id">3</div>
+                    <span class="status-badge status-open">Open</span>
+                </div>
+                <div class="task-body">
+                    <h3 class="task-title">Learn React</h3>
+                    <p class="task-description">Build React fundamentals and prepare for component-based development.</p>
+                    <div class="task-meta">
+                        <span class="priority-badge priority-high">P1-High</span>
+                        <span class="task-type">Task</span>
+                        <span class="customer">VL</span>
+                    </div>
+                </div>
+                <div class="task-footer">
+                    <div class="task-dates">
+                        <span>Start: 02-Mar-2026</span>
+                        <span>End: 06-Mar-2026</span>
+                    </div>
+                    <div class="task-actions">
+                        <button class="btn-icon">👁️</button>
+                        <button class="btn-icon">✏️</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-header">
+                    <div class="task-id">3.1</div>
+                    <span class="status-badge status-open">Open</span>
+                </div>
+                <div class="task-body">
+                    <h3 class="task-title">Learn React</h3>
+                    <p class="task-description">React fundamentals and JSX: components, props, rendering, reusable UI components</p>
+                    <div class="task-meta">
+                        <span class="priority-badge priority-high">P1-High</span>
+                        <span class="task-type">Task</span>
+                        <span class="customer">VL</span>
+                    </div>
+                </div>
+                <div class="task-footer">
+                    <div class="task-dates">
+                        <span>Start: 02-Mar-2026</span>
+                        <span>End: 02-Mar-2026</span>
+                    </div>
+                    <div class="task-actions">
+                        <button class="btn-icon">👁️</button>
+                        <button class="btn-icon">✏️</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-header">
+                    <div class="task-id">3.2</div>
+                    <span class="status-badge status-open">Open</span>
+                </div>
+                <div class="task-body">
+                    <h3 class="task-title">Learn React</h3>
+                    <p class="task-description">State and events: useState, mutability, event handlers, controlled components</p>
+                    <div class="task-meta">
+                        <span class="priority-badge priority-high">P1-High</span>
+                        <span class="task-type">Task</span>
+                        <span class="customer">VL</span>
+                    </div>
+                </div>
+                <div class="task-footer">
+                    <div class="task-dates">
+                        <span>Start: 03-Mar-2026</span>
+                        <span>End: 03-Mar-2026</span>
+                    </div>
+                    <div class="task-actions">
+                        <button class="btn-icon">👁️</button>
+                        <button class="btn-icon">✏️</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-header">
+                    <div class="task-id">3.3</div>
+                    <span class="status-badge status-open">Open</span>
+                </div>
+                <div class="task-body">
+                    <h3 class="task-title">Learn React</h3>
+                    <p class="task-description">Lists, useEffect & Forms: rendering lists, useEffect, API fetching, forms and validation</p>
+                    <div class="task-meta">
+                        <span class="priority-badge priority-high">P1-High</span>
+                        <span class="task-type">Task</span>
+                        <span class="customer">VL</span>
+                    </div>
+                </div>
+                <div class="task-footer">
+                    <div class="task-dates">
+                        <span>Start: 05-Mar-2026</span>
+                        <span>End: 05-Mar-2026</span>
+                    </div>
+                    <div class="task-actions">
+                        <button class="btn-icon">👁️</button>
+                        <button class="btn-icon">✏️</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-header">
+                    <div class="task-id">3.4</div>
+                    <span class="status-badge status-open">Open</span>
+                </div>
+                <div class="task-body">
+                    <h3 class="task-title">Learn React</h3>
+                    <p class="task-description">API Integration & Routing: React Router, routes, params, protected routes, 404 handling</p>
+                    <div class="task-meta">
+                        <span class="priority-badge priority-high">P1-High</span>
+                        <span class="task-type">Task</span>
+                        <span class="customer">VL</span>
+                    </div>
+                </div>
+                <div class="task-footer">
+                    <div class="task-dates">
+                        <span>Start: 06-Mar-2026</span>
+                        <span>End: 06-Mar-2026</span>
+                    </div>
+                    <div class="task-actions">
+                        <button class="btn-icon">👁️</button>
+                        <button class="btn-icon">✏️</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-header">
+                    <div class="task-id">4</div>
+                    <span class="status-badge status-open">Open</span>
+                </div>
+                <div class="task-body">
+                    <h3 class="task-title">Create website</h3>
+                    <p class="task-description">Build a complete React application with Tailwind: auth, protected routes, global state, reusable components</p>
+                    <div class="task-meta">
+                        <span class="priority-badge priority-high">P1-High</span>
+                        <span class="task-type">Task</span>
+                        <span class="customer">VL</span>
+                    </div>
+                </div>
+                <div class="task-footer">
+                    <div class="task-dates">
+                        <span>Start: 09-Mar-2026</span>
+                        <span>End: 13-Mar-2026</span>
+                    </div>
+                    <div class="task-actions">
+                        <button class="btn-icon">👁️</button>
+                        <button class="btn-icon">✏️</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
