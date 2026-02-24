@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid basics</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding : 20px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .product-card {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            grid-template-rows: 60px 1fr;
+            height: 100vh;
+            gap: 0;
+            margin: -20px;
+        }
+        .dashboard-header {
+            grid-column: 1 / -1;
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .dashboard-sidebar {
+            background-color: #414345;
+            padding: 20px;
+            color: white;
+        }
+        .dashboard-sidebar nav div{
+            padding-top: 8px;
+        }
+        .dashboard-main {
+            background-color: #f1f1f1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        /*Horizontal sidebar on smaller screens*/
+        @media (max-width: 768px) {
+            .dashboard-sidebar {
+                grid-column: 1 / -1;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .dashboard-sidebar h3 {
+                margin: 0;
+                
+            }
+            .dashboard-sidebar nav {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .dashboard {
+                grid-template-columns: 1fr;
+                grid-template-rows: 60px auto 1fr;
+            }
+        }
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            h1 {
+                font-size: 40px;
+            }   
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <header class="dashboard-header">
+            <h1>Dashboard</h1>
+        </header>
+        <aside class="dashboard-sidebar">
+            <h3>Navbar</h3>
+            <nav>
+                <div>Home</div>
+                <div>Analytics</div>
+                <div>Settings</div>
+            </nav>
+        </aside>
+        <main class="dashboard-main">
+            <h2>Main content</h2>
+            <h1>CSS Grid Basics</h1>
+            <h2>Responsive product grid</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <h3>Product 1</h3>
+                    <p>Product 1 is a good Water bottle</p>
+                </div>
+                <div class="product-card">
+                    <h3>Product 2</h3>
+                    <p>Product 2 is a good Coke bottle</p>
+                </div>
+                <div class="product-card">
+                    <h3>Product 3</h3>
+                    <p>Product 3 is a good Pepsi bottle</p>
+                </div>
+                <div class="product-card">
+                    <h3>Product 4</h3>
+                    <p>Product 4 is a good water bottle</p>
+                </div>
+                <div class="product-card">
+                    <h3>Product 5</h3>
+                    <p>Product 5 is a good Water bottle</p>
+                </div>
+                <div class="product-card">
+                    <h3>Product 6</h3>
+                    <p>Product 6 is a good Coke bottle</p>
+                </div>
+                <div class="product-card">
+                    <h3>Product 7</h3>
+                    <p>Product 7 is a good Pepsi bottle</p>
+                </div>
+                <div class="product-card">
+                    <h3>Product 8</h3>
+                    <p>Product 8 is a good water bottle</p>
+                </div>
+                <div class="product-card">
+                    <h3>Product 9</h3>
+                    <p>Product 9 is a good Water bottle</p>
+                </div>
+                <div class="product-card">
+                    <h3>Product 10</h3>
+                    <p>Product 10 is a good Coke bottle</p>
+                </div>
+                <div class="product-card">
+                    <h3>Product 11</h3>
+                    <p>Product 11 is a good Pepsi bottle</p>
+                </div>
+                <div class="product-card">
+                    <h3>Product 12</h3>
+                    <p>Product 12 is a good water bottle</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
