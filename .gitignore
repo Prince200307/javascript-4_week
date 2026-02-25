@@ -1,0 +1,24 @@
+# Dependencies
+# Never upload node_modules; it's huge and can be re-installed via 'npm install'
+node_modules/
+
+# Production Build
+# This is where your Tailwind output or React build lives
+dist/
+build/
+output.css
+
+# Environment Variables
+# Keep your API keys and secrets private
+.env
+.env.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor folders
+.vscode/
+.idea/
+.DS_Store
